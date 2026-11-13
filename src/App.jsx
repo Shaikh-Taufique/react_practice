@@ -3,6 +3,7 @@ import img from './assets/react.svg';
 import svg from './assets/angular.png'; 
 import Next from './assets/next.jfif';
 import Card from './components/card'; 
+import Navbar from './components/navbar.jsx';
 
 const name = 'React';
 const name1 = 'Angular';
@@ -22,12 +23,9 @@ const next = `Next.js is a popular open-source, full-stack web development frame
 export const App = () => {
   return (
     <>
-    <div className="container">   
-       <Card name={name} img={img} p={react} />
-        <Card name={name1} img={svg} p={angular} /> 
-        <Card name={name2} img={Next} p={next} /> 
+    <div>
+          <Navbar/>
     </div>
-       
     </>
     ); 
 };
